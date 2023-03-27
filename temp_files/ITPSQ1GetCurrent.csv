@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error | Astrill VPN</title>
+    <style media="screen">
+      /* latin */
+      @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Roboto'), local('Roboto-Regular'), url(http://127.0.0.1:3213/err_font.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      .page.error-page {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #333a81;
+      }
+      .page.error-page .error-container {
+        width: 100%;
+        max-width: 658px;
+        margin: 0 auto;
+      }
+      .page.error-page .error-container .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        margin-bottom: 15px;
+      }
+      .page.error-page .error-container .header .logo {
+        width: 100%;
+        max-width: 182px;
+      }
+      .page.error-page .error-container .header .title {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .page.error-page .error-container .content {
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+      .page.error-page .error-container .content .heading {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      .page.error-page .error-container .content .heading h1 {
+        color: #3e3e46;
+        font-size: 28px;
+      }
+      .page.error-page .error-container .content .heading svg {
+        width: 70px;
+        height: auto;
+      }
+      .page.error-page .error-container .content .text {
+        line-height: 26px;
+        font-size: 14px;
+        color: #6b7c93;
+      }
+      .page.error-page .error-container .content .text ul {
+        padding-left: 0;
+        list-style-type: none;
+      }
+      .page.error-page .error-container .content .text ul li {
+        position: relative;
+        padding-left: 15px;
+      }
+      .page.error-page .error-container .content .text ul li:before {
+        content: "\2022";
+        position: absolute;
+        top: 1px;
+        left: 0;
+        margin-right: 8px;
+        line-height: 26px;
+        font-size: 22px;
+        color: #6362d2;
+      }
+      .page.error-page .error-container .content .text ul li:not(:last-of-type) {
+        margin-bottom: 6px;
+      }
+
+      /* MEDIA QUERY */
+      @media screen and (min-width: 700px) {
+        .page.error-page .error-container .content {
+          padding: 20px 40px;
+        }
+        .page.error-page .error-container .content .text {
+          margin-right: 40px;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="page error-page">
+      <div class="error-container">
+        <div class="header">
+          <div class="logo">
+            <a class="logo" href="https://www.astrill.com">
+              <svg version="1.1" viewBox="0 0 240.69 44.283" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <path d="m120.06 8.5791h3.6951l9.7375 26.666c0.59944 1.7983 1.3479 4.494 1.3479 4.494h0.1s0.69892-2.6962 1.3484-4.494l9.7375-26.666h3.6951l-12.984 35.105h-3.6946l-12.983-35.105zm32.657 0h12.134c6.2424 0 10.836 4.0946 10.836 10.586 0 6.5413-4.594 10.736-10.836 10.736h-8.6886v13.782h-3.4452v-35.105zm11.685 18.227c4.694 0 7.7397-2.8467 7.7397-7.6402 0-4.744-3.0457-7.4907-7.6902-7.4907h-8.2892v15.13h8.2397zm14.526-18.227h3.3457l17.927 25.267c1.1984 1.7478 2.8962 4.744 2.8962 4.744h0.0995s-0.29946-2.8962-0.29946-4.744v-25.267h3.4451v35.105h-3.3457l-17.927-25.267c-1.1984-1.7473-2.8957-4.744-2.8957-4.744h-0.1s0.29947 2.8962 0.29947 4.744v25.267h-3.4452v-35.105zm-166.5-0.34946h6.7913l12.433 35.454h-6.5908l-3.0462-9.0881h-12.434l-2.9962 9.0881h-6.5913l12.434-35.454zm7.9897 21.123-3.1462-9.4875c-0.59944-1.9978-1.3984-5.4934-1.3984-5.4934h-0.09999s-0.79942 3.4956-1.3984 5.4934l-3.1962 9.4875h9.2391zm15.085 6.9913c1.8978 1.7478 4.694 2.7962 7.2408 2.7962 2.2473 0 3.5456-0.9489 3.5456-2.5467 0-3.9946-12.634-2.9962-12.634-11.335 0-4.9935 4.3946-7.6402 9.7375-7.6402 3.0462 0 6.2419 0.84891 8.5891 2.8962l-2.3473 4.4446c-1.4978-1.2984-4.1946-2.1978-6.4413-2.1978-2.1978 0-3.5456 0.84942-3.5456 2.4473 0 4.0446 12.634 2.8962 12.634 11.235 0 4.494-3.7951 7.8397-9.6375 7.8397-3.5451 0-7.3403-1.1984-9.987-3.7451l2.8462-4.1941zm19.814-25.068h6.3419v7.2908h5.7924v5.0435h-5.7924v9.937c0 4.1951 3.2957 4.794 5.0435 4.794 0.34997 0 0.64893 0 1.1489-0.09949v5.5429c-0.49996 0.05-1.0989 0.14948-1.9478 0.14948-3.5451 0-10.586-1.0484-10.586-9.5875v-23.071zm16.128 6.9413h6.0924v4.494c0 0.9489-0.09999 1.7478-0.09999 1.7478h0.09999c1.1484-3.5956 4.2441-6.5913 8.0897-6.5913 0.39946 0 0.79892 0.05 1.1984 0.09949v6.2424c-0.24998-0.04999-0.9989-0.09999-1.5478-0.09999-5.1935 0-7.4907 4.494-7.4907 9.2886v10.286h-6.3419v-25.467zm19.031-9.987h6.3419v5.6429h-6.3419v-5.6429zm0 9.987h6.3419v25.467h-6.3419v-25.467zm10.377 25.467v-35.348h6.2919v35.348h-6.2919zm10.033 0v-35.348h6.2919v35.348h-6.2919z" fill="#fff"/>
+                <g transform="matrix(.50501 0 0 .50501 0 -.42671)" fill="#fff">
+                  <path d="m447.63 58.924c-16.013 0.03-29.065-12.972-29.094-28.987-0.029-16.011 12.972-29.061 28.984-29.092 16.013-0.029 29.064 12.973 29.093 28.983 0.03 16.015-12.97 29.067-28.983 29.096zm-0.103-53.815c-13.66 0.026-24.755 11.16-24.727 24.821 0.025 13.662 11.158 24.757 24.82 24.73 13.66-0.026 24.756-11.161 24.729-24.823-0.025-13.66-11.162-24.754-24.822-24.728z"/>
+                  <path d="m451.79 59.473"/>
+                  <path d="m455.5 18.886 17.756 2.569-12.839 12.529 3.049 17.682-15.887-8.341-15.872 8.362 3.021-17.682-12.855-12.511 17.748-2.595 7.929-16.092z"/>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="title">
+            <span>Error page</span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="heading">
+            <h1>Astrill Error</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="40px" height="40px">
+              <g id="surface1">
+                <path style=" fill:#FFC107;" d="M 40 40 L 8 40 C 7.28125 40 6.621094 39.617188 6.265625 38.996094 C 5.910156 38.375 5.910156 37.609375 6.273438 36.992188 L 22.273438 8.992188 C 22.632813 8.378906 23.289063 8 24 8 C 24.710938 8 25.367188 8.378906 25.726563 8.992188 L 41.726563 36.992188 C 42.089844 37.609375 42.089844 38.375 41.734375 38.996094 C 41.378906 39.617188 40.714844 40 40 40 Z "/>
+                <path style=" fill:#5D4037;" d="M 22 34.140625 C 22 33.871094 22.046875 33.628906 22.144531 33.394531 C 22.238281 33.167969 22.371094 32.96875 22.546875 32.804688 C 22.71875 32.636719 22.929688 32.503906 23.171875 32.410156 C 23.414063 32.320313 23.6875 32.269531 23.992188 32.269531 C 24.300781 32.269531 24.574219 32.320313 24.820313 32.410156 C 25.070313 32.503906 25.28125 32.636719 25.453125 32.804688 C 25.628906 32.96875 25.765625 33.167969 25.855469 33.394531 C 25.953125 33.628906 26 33.871094 26 34.140625 C 26 34.410156 25.953125 34.65625 25.855469 34.882813 C 25.761719 35.105469 25.628906 35.300781 25.453125 35.46875 C 25.28125 35.636719 25.070313 35.765625 24.820313 35.863281 C 24.574219 35.953125 24.300781 36 23.992188 36 C 23.6875 36 23.414063 35.953125 23.171875 35.859375 C 22.929688 35.765625 22.71875 35.636719 22.546875 35.46875 C 22.371094 35.300781 22.234375 35.105469 22.144531 34.882813 C 22.046875 34.65625 22 34.410156 22 34.140625 M 25.480469 30 L 22.507813 30 L 22.085938 18 L 25.898438 18 Z "/>
+              </g>
+            </svg>
+          </div>
+          <div class="text">
+            <p>Access violation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
