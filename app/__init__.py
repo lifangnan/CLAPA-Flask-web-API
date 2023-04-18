@@ -13,6 +13,12 @@ def create_app():
 
     load_dotenv()
 
+    app.config['MONGO_URL'] = "mongodb://222.29.111.164:27017/"
+    app.config['MONGO_USERDB'] = "USERDB"
+    app.config['MONGO_USERCOL'] = "USERCOL"
+    app.config['MONGO_DB'] = "CLAPA_ExperimentalData"
+    app.config['MONGO_META_COL'] = "metadata_collection"
+
     # 导入所有环境变量
     #在上面的代码示例中，我们首先使用 load_dotenv() 函数加载 .env 文件中的环境变量。然后，我们使用 os.environ 字典遍历所有的环境变量，并将它们导入到 Flask 应用程序的 config 对象中。
     for key in os.environ:
@@ -25,9 +31,11 @@ def create_app():
         from .auth import auth_blue
         from .user import user_blue
         from .status import status_blue
+        from .devicefiles import devicefiles_blue
         app.register_blueprint(search_blue, url_prefix='/search')
         app.register_blueprint(auth_blue, url_prefix='/auth')
         app.register_blueprint(user_blue, url_prefix='/user')
         app.register_blueprint(status_blue, url_prefix='/')
+        app.register_blueprint(devicefiles_blue, url_prefix='/devicefiles')
         
     return app

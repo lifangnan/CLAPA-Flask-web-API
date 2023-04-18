@@ -242,9 +242,6 @@ def getArchiverDataCSV():
 
     # return send_file("./temp_files/Archiver_Data.csv", as_attachment=True, attachment_filename="Archiver_Data.csv")
 
-    
-
-
 
 # 从mongoDB获取特定相机的所有图片的文件名和url
 @app.route("/getFilenamesAndUrls", methods = ['GET'])

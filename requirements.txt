@@ -1,3 +1,11 @@
 flask
+flask_cors
+flask_jwt
 pymongo
 python-dotenv
+minio
+CaChannel
+numpy
+pandas 
+pillow
+python-dateutil
